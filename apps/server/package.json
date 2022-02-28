@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "go mod tidy && nodemon --exec go run main.go --signal SIGTERM",
+    "build": "go mod tidy && go build -o dist/server"
+  },
+  "keywords": [],
+  "author": "Abdallah Alsahhar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
